@@ -33,16 +33,6 @@ The above example will output: Old Title - (NEW)
 ```
 
 
-```javascript
-jqueryTitle({
-    titleRight: '(NEW)',
-    connect   : ' - '
-});
-
-
-The above example will output: Old Title - (NEW)
-```
-
 ### jQueryTitle Destroy
 ```javascript
 
