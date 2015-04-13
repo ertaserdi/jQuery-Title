@@ -11,23 +11,23 @@
  * LICENSE: https://github.com/ertaserdi/jQuery-Title/blob/master/LICENSE
  */
 
-var jqueryTitle_firstTitle= '';
-jqueryTitle_firstTitle  =   $(document).attr("title");
+var jqueryTitle_firstTitle=$(document).attr("title");
 function jqueryTitle(options){
+    var $d=$(document);
     if( typeof options !== 'string' ) {
         var connect =   ' ';
         if("connect" in options)
             var connect =   options.connect;
         if("title" in options)
-            $(document).attr("title",options.title);
+            $d.attr("title",options.title);
         if("titleLeft" in options)
-            $(document).attr("title",options.titleLeft+connect+jqueryTitle_firstTitle);
+            $d.attr("title",options.titleLeft+connect+jqueryTitle_firstTitle);
         if("titleRight" in options)
-            $(document).attr("title",jqueryTitle_firstTitle+connect+options.titleRight);
+            $d.attr("title",jqueryTitle_firstTitle+connect+options.titleRight);
         if("timeout" in options)
             setTimeout(function(){jqueryTitle('destroy')},options.timeout);
     }else{
         if(options=='destroy')
-            $(document).attr("title",jqueryTitle_firstTitle);
+            $d.attr("title",jqueryTitle_firstTitle);
     }
 }
