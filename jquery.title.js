@@ -3,7 +3,6 @@
  * Versiyon: 1.0
  * Contact for support. / Katkı sağlamak için iletişime geçebilirsiniz.
  * Email: ertaserdi@gmail.com
- * You can contact to contribute.
  * Download: https://github.com/ertaserdi/jQuery-Title
  * 
  * Kullandığınız için teşekkürler... / Thank you for using...
