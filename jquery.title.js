@@ -1,6 +1,6 @@
 /**
  * Created by Erdi ERTAŞ on 13.04.2015.
- * Versiyon: 1.0
+ * Versiyon: 1.0.1
  * Contact for support. / Katkı sağlamak için iletişime geçebilirsiniz.
  * Email: ertaserdi@gmail.com
  * Download: https://github.com/ertaserdi/jQuery-Title
@@ -9,7 +9,7 @@
  * 
  * LICENSE: https://github.com/ertaserdi/jQuery-Title/blob/master/LICENSE
  */
-
+(function($, window) {
 var jqueryTitle_firstTitle=$(document).attr("title");
 function jqueryTitle(options){
     var $d=$(document);
@@ -30,3 +30,4 @@ function jqueryTitle(options){
             $d.attr("title",jqueryTitle_firstTitle);
     }
 }
+})(jQuery, window);
